@@ -9,3 +9,4 @@ class Person(models.Model):
     email_address = models.EmailField(max_length=100, null=True)
     birthday = models.DateTimeField(blank=True, null=True)
     sex = models.CharField(max_length=20, null=True)
+

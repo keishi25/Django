@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'myapp',
+    'accounts.apps.AccountsConfig', # [追加]
+    'myapp.apps.MyappConfig',  # [追加]
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'login_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # [追加]
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,4 +123,24 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+"""
+staticファイルの設定
+collectstaticを行った時、STATIC_URLに、STATICFILES_DIRSで設定した静的ファイルが集約される
+"""
+
 STATIC_URL = '/static/'
+
+# collectstaticで集計させるstaicディレクトリ
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "myapp/static"),
+    os.path.join(BASE_DIR, "accounts/static"),
+]
+
+# collectstaticで集計される場所
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+
+
+
+# ログイン後トップページにリダイレクト
+LOGIN_REDIRECT_URL = '/myapp'
+
