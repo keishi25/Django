@@ -24,11 +24,12 @@ https://it-engineer-lab.com/archives/544
 - ログアウト画面: templates/registration/logged_out.html
 ※認証ビューのデフォルト参照先は、template/registration
 3. サインアップ実装
-3-1. accountアプリ作成
-3-2. urls設定
-3-3. サインアップビュー作成
-3-4. サインアップtemplate作成(templates/accounts/signup.html)
-4.ログイン制限 ログイン下ユーザだけ閲覧可能になる
--  viewに@login_requiredのデコレータを付ける 
-※クラスベースビューには、LoginREquiredMixinを使用する
+- accountアプリ作成
+- urls設定
+- サインアップビュー作成
+- サインアップtemplate作成(templates/accounts/signup.html)
+- ログイン制限 ログイン下ユーザだけ閲覧可能になる
+4. ログイン制限をする
+- view関数login_requirerdのデコレータを付ける
+- ※クラスベースビューには、LoginREquiredMixinを使用する
 
