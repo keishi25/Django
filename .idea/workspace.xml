@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2ee932bd-4986-4a41-8281-8acf5a4644aa" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/login_project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/login_project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_project/login_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/login_project/login_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_project/login_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/login_project/login_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_project/myapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/login_project/myapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_project/myapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/login_project/myapp/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +30,7 @@
     <option name="x" value="-251" />
     <option name="y" value="-1080" />
     <option name="width" value="1046" />
-    <option name="height" value="1087" />
+    <option name="height" value="1848" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -90,7 +86,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-251" y="-1080" width="1046" height="1087" extended-state="0" />
+    <frame x="-251" y="-1080" width="1046" height="1848" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15972222" />
