@@ -10,10 +10,15 @@ def index(request):
 
 class LoginRequiredViewSample(LoginRequiredMixin, TemplateView):
     template_name = 'myapp/login_view.html'
-    #login_url = '/login/' # 削除
+    #login_url = '/login/' # 削除したコード
 
-    #def get_context_data(self, **kwargs):
-        #context = super().get_context_data(**kwargs)
-        #context['message'] = 'こんにちは'
-        #return context
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['message'] = "はじめまして"
+
+        # ログインユーザ取得
+        user = self.request.user
+        print(user)
+
+        return context
 
