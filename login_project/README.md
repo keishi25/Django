@@ -36,5 +36,8 @@ https://it-engineer-lab.com/archives/544
 
 ## その他
 
-### ログイン情報の取得
+### a.ログイン情報の取得
 - self.request.userで取得可能
+
+### b.サインイン情報の変更
+- forms.pyでUserCreationFormを継承。fieldに項目を追加する
