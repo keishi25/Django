@@ -8,8 +8,8 @@ def index(request):
     return HttpResponse("Hello, world. Yo\lu're at the polls index")
 
 
-class ViewB(LoginRequiredMixin, TemplateView):
-    template_name = 'myapp/viewb.html'
+class LoginRequiredViewSample(LoginRequiredMixin, TemplateView):
+    template_name = 'myapp/login_view.html'
     #login_url = '/login/' # 削除
 
     #def get_context_data(self, **kwargs):
