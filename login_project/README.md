@@ -31,5 +31,8 @@ https://it-engineer-lab.com/archives/544
 - ログイン制限 ログイン下ユーザだけ閲覧可能になる
 ### 4. ログイン制限をする
 - view関数login_requirerdのデコレータを付ける
-- ※クラスベースビューには、LoginREquiredMixinを使用する
+- クラスベースビューには、LoginREquiredMixinを使用する
+- view.py　⇒　class ViewB(LoginRequiredMixin, TemplateView):
+- ※継承の順番には注意。urlの設定は、通常のクラスベースビューと同じ
+
 
