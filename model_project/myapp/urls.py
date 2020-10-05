@@ -1,7 +1,8 @@
-from django.urls import path
+from django.conf.urls import url
+from django.contrib import admin
 
-from . import views
+from myapp.views import PersonCreateView
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    url('', PersonCreateView.as_view()),
 ]

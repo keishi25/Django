@@ -1,4 +1,11 @@
-from django.http import HttpResponse
+from django.views.generic import CreateView, UpdateView
 
-def index(request):
-    return HttpResponse("Hello, world. Yo\lu're at the polls index")
+from .models import Person
+from .forms import PersonForm
+
+
+class PersonCreateView(CreateView):
+    model = Person
+    form_class = PersonForm
+    template_name = "myapp/form.html"
+    success_url = ""  # 成功時にリダイレクトするURL
