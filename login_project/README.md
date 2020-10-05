@@ -40,4 +40,4 @@ https://it-engineer-lab.com/archives/544
 - self.request.userで取得可能
 
 ### b.サインイン情報の変更
-- forms.pyでUserCreationFormを継承。fieldに項目を追加する
+- forms.pyでUserCreationFormを継承。fieldsに追加したいフォームの項目を追加する
