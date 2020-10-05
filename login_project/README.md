@@ -35,4 +35,6 @@ https://it-engineer-lab.com/archives/544
 - view.py　⇒　class ViewB(LoginRequiredMixin, TemplateView):
 - ※継承の順番には注意。urlの設定は、通常のクラスベースビューと同じ
 
+## その他
 
+### ログイン情報の取得
