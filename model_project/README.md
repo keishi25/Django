@@ -6,5 +6,6 @@ https://qiita.com/dai-takahashi/items/5042db0792c9f7d01c1e
 　club = models.ForeignKey(親モデル, on_delete=models.CASCADE)
 - foreignkeyの項目には、親が持っているidが付与される
 - 親モデルには、一意な名称を戻り値で返すように設定しておく    
-  'def ＿＿str＿＿(self): 
-   　return [一意な名称] '
+```def ＿＿str＿＿(self):
+   　return [一意な名称] 
+```
