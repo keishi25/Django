@@ -140,6 +140,10 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
 
+# 未ログイン状態でのリダイレクト先
+# 下記の設定がない場合でも、未ログイン状態の時自動でlogin画面に遷移する
+LOGIN_URL = 'login'
+
 # ログイン後のリダイレクト先
 LOGIN_REDIRECT_URL = '/myapp'
 
