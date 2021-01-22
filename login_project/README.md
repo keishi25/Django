@@ -35,6 +35,9 @@ https://it-engineer-lab.com/archives/544
 - ※継承の順番には注意。urlの設定は、通常のクラスベースビューと同じ
 
 ## その他
+django.contrib.auth.urlsをインポートするだけで、
+templates/registration/以下に配置されたlogin.htmlおよびlogged_out.htmlという名前のテンプレートが、それぞれ上記URLにおいて自動的に表示される。
+myapp/urls.pyで、loginおよびlogoutに関するビューを記述する必要がなくなる
 
 ### a.ログイン情報の取得
 - self.request.userで取得可能

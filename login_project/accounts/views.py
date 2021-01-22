@@ -9,3 +9,5 @@ class SignUpView(generic.CreateView):
     form_class = SignUpForm  # formを使用する場合
     success_url = reverse_lazy('login')
     template_name = 'accounts/signup.html'
+
+

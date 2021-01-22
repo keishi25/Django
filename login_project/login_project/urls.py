@@ -21,4 +21,11 @@ urlpatterns = [
     path('myapp/', include('myapp.urls')),
     path('accounts/', include('accounts.urls')),  # 追加　
     path('accounts/', include('django.contrib.auth.urls')),  # 認証ビューが使用可能
+
 ]
+"""
+   django.contrib.auth.urlsをインポートするだけで、
+   templates/registration/以下に配置されたlogin.htmlおよびlogged_out.htmlという名前のテンプレートが、
+   それぞれ上記URLにおいて自動的に表示される。
+   myapp/urls.pyで、loginおよびlogoutに関するビューを記述する必要がなくなる
+"""
